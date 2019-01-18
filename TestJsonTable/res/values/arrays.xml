@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+      <string-array name="lessons">
+        <item>高数</item>
+        <item>英语</item>
+        <item>物理</item>
+    </string-array>
+    
+  <string-array name="gender">
+   <item> 任意</item>
+   <item>男</item>
+   <item> 女</item>
+   </string-array>  
+   
+  <string-array name="sequence">
+   <item> 升序</item>
+   <item>降序</item>
+   
+   </string-array>  
+  
+</resources>

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/m1"
+        android:title="按学号降序"
+        android:orderInCategory="100"
+        android:showAsAction="never" android:checked="false" android:visible="true"/>
+    <item android:id="@+id/m2"
+        android:title="按高数降序"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/m3"
+        android:title="添加"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/m4" android:orderInCategory="100" android:title="删除"></item>
+    <item android:id="@+id/m5" android:orderInCategory="100" android:title="修改"></item>
+    <item android:id="@+id/m6" android:orderInCategory="100" android:title="查询"></item>
+    <item android:id="@+id/m7" android:orderInCategory="100" android:title="刷新"></item>
+</menu>

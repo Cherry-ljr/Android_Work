@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="@drawable/three"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="57dp"
+        android:background="#fde0dc"
+        android:text="添加" />
+
+    <EditText
+        android:id="@+id/NAME"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:layout_toLeftOf="@+id/btn_add"
+        android:layout_toRightOf="@+id/name"
+        android:ems="8" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/add_Mach"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditE1"
+        android:layout_alignRight="@+id/EditE1"
+        android:layout_alignTop="@+id/tvEnglish"
+        android:ems="8" />
+
+    <TextView
+        android:id="@+id/tvEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/EditE1"
+        android:layout_marginTop="22dp"
+        android:text="高数："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/add_en"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_Mach"
+        android:layout_alignRight="@+id/add_Mach"
+        android:layout_below="@+id/add_Mach"
+        android:layout_marginTop="19dp"
+        android:ems="8" />
+
+    <TextView
+        android:id="@+id/tvPhy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/add_en"
+        android:text="英语："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gender"
+        android:layout_alignRight="@+id/name"
+        android:layout_marginRight="16dp"
+        android:text="学号"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_display"
+        android:layout_below="@+id/add_Stu"
+        android:layout_marginTop="28dp"
+        android:text="性别："
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/add_Stu"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NAME"
+        android:layout_below="@+id/NAME"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/btn_add"
+        android:ems="8" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="请输入学生信息："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/EditE1"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gender"
+        android:layout_alignRight="@+id/add_Stu"
+        android:layout_toRightOf="@+id/gender"
+        android:ems="8" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/add_en"
+        android:layout_marginTop="23dp"
+        android:text="物理："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/add_py"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/add_en"
+        android:layout_alignTop="@+id/TextView01"
+        android:layout_toRightOf="@+id/tv_display"
+        android:ems="8" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="19dp"
+        android:text=" 姓名："
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/return1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_add"
+        android:layout_alignBottom="@+id/btn_add"
+          android:background="#fde0dc"
+        android:layout_toRightOf="@+id/tv_display"
+        android:text="返回" />
+
+</RelativeLayout>

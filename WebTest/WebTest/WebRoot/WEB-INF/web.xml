@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<context-param>
+		<param-name>driverName</param-name>
+		<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+	</context-param>
+	<context-param>
+		<param-name>url</param-name>
+		<param-value>jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};DBQ=E://安卓老师//y8-Web服务器开发技术//WebTest//WebTest//WebRoot//WEB-INF//demo.mdb</param-value>
+	</context-param>
+
+	<servlet>
+		<description>Servlet 事例</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DemoServlet</servlet-name>
+		<servlet-class>cn.edu.gzu.demo.DemoServlet</servlet-class>
+		<init-param>
+			<param-name>driverName</param-name>
+			<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+		</init-param>
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};DBQ=E://安卓老师//y8-Web服务器开发技术//WebTest//WebTest//WebRoot//WEB-INF//demo.mdb</param-value>
+		</init-param>
+	</servlet>
+	
+  <servlet>
+    <description>Json返回事例</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DemoServletJson</servlet-name>
+    <servlet-class>cn.edu.gzu.demo.DemoServletJson</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>DemoServlet</servlet-name>
+    <url-pattern>/DemoServlet.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DemoServletJson</servlet-name>
+    <url-pattern>/DemoServletJson.do</url-pattern>
+  </servlet-mapping>
+
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

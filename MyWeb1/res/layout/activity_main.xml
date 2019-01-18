@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+   
+    <FrameLayout
+        android:id="@+id/body_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40dp" >
+
+        <WebView
+            android:id="@+id/sbrowser_act_web"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:id="@+id/sbrowser_act_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#88000000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+             >
+
+            <ProgressBar
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="...正在加载..."
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/sbrowser_act_control_container"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/skin_aio_input_bar_bg" >
+
+        <ImageView
+            android:id="@+id/sbrowser_act_control_left"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/custom_browser_left"
+            android:padding="10dp"
+             />
+
+        <ImageView
+            android:id="@+id/sbrowser_act_control_right"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="53.3dip"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/sbrowser_act_control_left"
+            android:src="@drawable/custom_browser_right" />
+
+        <ImageView
+            android:id="@+id/sbrowser_act_control_refresh"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_marginRight="16.7dip"
+            android:src="@drawable/custom_browser_referesh" />
+    </RelativeLayout>
+
+</RelativeLayout>

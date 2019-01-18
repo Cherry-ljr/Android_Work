@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+     android:background="@drawable/c"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="38dp"
+        android:text="    欢迎来到成绩管理系统！"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/sN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="30dp"
+        android:text="     你想选择的应用："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sN"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="46dp"
+     
+        android:text="  添加" />
+
+    <Button
+        android:id="@+id/deleteBUtton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addButton"
+        android:layout_below="@+id/addButton"
+      
+        android:layout_marginTop="26dp"
+        android:text="  删除" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/deleteBUtton"
+        android:layout_alignBottom="@+id/deleteBUtton"
+        android:layout_alignLeft="@+id/updateButton"
+  
+        android:text="查找" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/deleteBUtton"
+        android:layout_marginLeft="43dp"
+        
+        android:layout_toRightOf="@+id/addButton"
+        android:text="修改" />
+ 
+</RelativeLayout>
+

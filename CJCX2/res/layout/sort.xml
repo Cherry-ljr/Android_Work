@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/h"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/S_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="21dp"
+        android:layout_marginRight="17dp"
+        android:text="查询" />
+
+    <Spinner
+        android:id="@+id/spin_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/show_gender"
+        android:layout_toLeftOf="@+id/S_sure"
+        android:layout_toRightOf="@+id/show_gender"
+        android:entries="@array/gender" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spin_g"
+        android:text="科目："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spin_S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spin_g"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toLeftOf="@+id/S_sure"
+        android:entries="@array/lessons" />
+
+    <EditText
+        android:id="@+id/e_minscore"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/textView5"
+        android:background="#00ff00"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        android:labelFor="@+id/e_minscore" />
+
+    <EditText
+        android:id="@+id/e_maxscore"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/e_minscore"
+        android:layout_alignBottom="@+id/e_minscore"
+        android:layout_toLeftOf="@+id/S_sure"
+        android:background="#00ff00"
+        android:ems="10"
+        android:hint="100"
+        android:inputType="number"
+        android:labelFor="@+id/e_minscore" />
+
+    <TextView
+        android:id="@+id/show_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="性别："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="38dp"
+        android:text="按学号排序："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spin_S"
+        android:layout_marginTop="20dp"
+        android:text="分数段："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spin_stuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/e_minscore"
+        android:layout_below="@+id/textView6"
+        android:entries="@array/sequence" />
+
+</RelativeLayout>

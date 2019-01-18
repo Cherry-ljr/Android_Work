@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/g"
+    android:orientation="vertical" >
+      <TextView 
+        android:id="@+id/show_name"
+        android:layout_width = "wrap_content"
+        android:layout_height="wrap_content"
+		android:text="姓名"
+        android:textSize = "30dp"
+        android:layout_gravity="left"   
+        android:layout_marginRight="40dp"   
+        android:layout_marginTop="20dp"
+        />
+        <TextView 
+        android:id="@+id/show_name"
+        android:layout_width = "wrap_content"
+        android:layout_height="wrap_content"
+		android:text="姓名"
+        android:textSize = "30dp"
+        android:layout_gravity="left"   
+        android:layout_marginRight="40dp"   
+        android:layout_marginTop="20dp"
+        />
+
+          <TextView
+              android:id="@+id/show_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="left"
+              android:layout_marginRight="40dp"
+              android:layout_marginTop="20dp"
+              android:text="姓名"
+              android:textSize="30dp" />
+
+          <TextView
+              android:id="@+id/show_gender"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/show_stu"
+              android:layout_marginTop="19dp"
+              android:text="性别"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/show_grades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/show_gender"
+        android:layout_marginTop="30dp"
+        android:text="各科成绩"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/show_sumAndave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/show_grades"
+        android:layout_marginTop="30dp"
+        android:text="总分平均分"
+        android:textSize="20dp" />
+
+<TextView
+    android:id="@+id/show_stu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/show_name"
+    android:layout_marginTop="16dp"
+    android:text="学号"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="50dp"
+        android:text="修改" />
+
+    <Spinner
+        android:id="@+id/choose_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/show_sumAndave"
+        android:entries="@array/lessons" />
+
+    <EditText
+        android:id="@+id/edt_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/choose_subject"
+        android:ems="10"
+        android:hint="新分数"
+        android:inputType="number" />
+
+</RelativeLayout>
